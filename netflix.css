@@ -1,0 +1,464 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+}
+
+.hr {
+    width: 100%;
+    height: 0.5rem;
+    background-color: rgb(35, 35, 35);
+}
+
+/* .hr {
+    width: 100%;
+    height: 10px;
+    background-color: gray;
+} */
+
+.header {
+    /* width: 100%;
+    height: 100vh; */
+    background-image: linear-gradient(black, transparent, black), url('back.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 50px;
+    z-index: 1000000;
+}
+
+.head svg {
+    width: 150px;
+    margin-top: 35px;
+    margin-left: 80px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+nav button {
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: white;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.langauge-btn {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid white;
+    padding: 7px 10px;
+}
+
+.header-content {
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* text-align: center; */
+    margin-top: 100px;
+}
+
+.header-content h1 {
+    font-size: 60px;
+    text-align: center;
+    /* line-height: 70px; */
+    /* font-weight: 600; */
+    /* max-width: 650px; */
+    color: white;
+}
+
+.header-content h3 {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    color: white;
+    text-align: center;
+}
+
+.email { 
+    border-radius: 4px;
+    align-items: center;
+    display: flex;
+    margin-top: 500px;
+    margin-left: 25%;
+    overflow: hidden;
+}
+
+.email input {
+    width: 50%;
+    /* flex: 0.3; */
+    outline: 0;
+    /* display: flex;
+    justify-content: center; */
+    margin-left: 40px;
+    padding: 15px 30px;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+    /* background: transparent; */
+}
+
+.email button {
+    background: #ff0000;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+    color: white;
+    font-size: 16px;
+    padding: 15px 30px;
+}
+
+input[type="email"] {
+    color: white;
+}
+
+.features {
+    /* padding: 50px 12%; */
+    /* padding: 0px 10%; */
+    font-size: 22px;
+}
+
+.row {
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: -20%
+    
+    /* padding:  0; */
+}
+
+.text-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    /* padding: 50px 12%; */
+}
+
+.text-col-x {
+    display: block;
+    /* flex-basis: 50%; */
+    /* margin-bottom: 20px; */
+    /* padding: 50px 12%; */
+}
+
+.img-col {
+    z-index: 1;
+    flex-basis: 50%;
+    position: absolute;
+    left: 50%;
+    margin-bottom: 20px;
+    padding: 0px 10%;
+}
+
+.img-col-x {
+    flex-basis: 50%;
+    /* margin-bottom: 20px;
+    margin-left: -10%; */
+    z-index: 1;
+}
+
+.img-col img {
+    /* display: flex;
+    justify-content: space-evenly; */
+    width: 110%;
+    /* position: absolute; */
+    margin-left: -30%;
+    bottom: -60%; 
+   
+}
+
+.img-col-x img {
+    display: block;
+    width: 65%;
+    margin-left: -30%;
+    bottom: -60%;
+}
+
+
+.card-animation {
+    height: auto;
+    width: 30%;
+    position: absolute;
+    left: 69.1%;
+    transform: translate(-50%, -50%);
+}
+
+.card-animation .video2 {
+    position: relative;
+    left: 12%;
+    top: 0.5vw;
+}
+
+.featues h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.faq {
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+.faq h2 {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.que {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.que li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.que li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    position: relative;
+}
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+.faq .email {
+    max-width: 600px;
+    margin: 20px auto 60px;
+
+}
+
+.faq small {
+    font-size: 13px;
+}
+
+.footer {
+    padding: 50px 15% 10px;
+    color: gray;
+}
+
+.footer h3 {
+    color: gray;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.footer .col {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20%;
+}
+
+.footer .col a {
+    display: block;
+    text-decoration: none;
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+}
+
+footer .content7 {
+    width: 100%;
+    height: 300pt;
+}
+
+.dropdown select {
+    outline: 0;
+    border: none;
+    color: white;
+    background: transparent;
+}
+
+.content7 .row-x {
+    padding: 1px;
+    margin-top: 5px;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center; */
+    /* position: relative; */
+}
+.faqpart {
+    margin-left: 12%;
+} 
+
+.st-img .img {
+    width: 100%;
+    height: auto;
+}
+
+.video1 {
+    position: absolute;
+    left: -5.5%;
+    margin-top: -25.7%;
+}
+
+.form1 {
+    display: flex;
+    flex-direction: column;
+}
+.dropdown {
+    margin-top: -3%;
+    margin-left: 1.5%;
+}
+.faq label:hover {
+    background-color: gray;
+}
+/* button:hover {
+    background-color: rgb(91, 40, 40);
+} */
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        width: 100px;
+    }
+
+    nav button {
+        display: flex;
+        padding: 5px 10px;
+        margin-top: 1.3em;
+    }
+
+    nav select {
+        float: left;
+        padding: 4px 8px;
+        margin-left: -40%;
+        margin-top: 1em;
+    }
+
+    .header-content {
+        font-size: 10px;
+        margin-top:25%;
+        align-items: center;
+    }
+
+    .email .btnbtn1 {
+        width: 30%;
+        font-size: 15px;
+        padding: 10px 0px;
+        border-radius: 4px;
+        margin-top: 10px;
+        margin-left: -20%;
+    }
+    .email .btnbtn {
+        margin-top: 10px;
+        margin-left: 5%;
+        padding: 10px 20px;
+    }
+    .email .em {
+      margin-left: 1%;
+    }
+
+    .email input {
+        width: 80%;
+        align-items: center;
+        margin-left: -20%;
+    }
+    .email {
+        margin-top: 600px;
+        flex-direction: column;
+    }
+
+    .form1 input {
+        max-width: 100%;
+    }
+
+    .text-col,.img-col {
+        flex-basis: 100%;
+    }
+
+    .text-col,   .text-col-x {
+        text-align: center;
+
+    }
+    
+    /* .text-col-x {
+        text-align: center;
+    } */
+    .img-col{
+        width: 70%;
+        margin-top: 300px;
+        margin-left: -210px;
+        padding-top: -30px;
+    }
+
+    .video1 {
+        width: 110%;
+        align-items: center;
+        position: absolute;
+        left: -80%;
+        /* margin-left: -200%;  */
+        top: 21vw;
+    }
+
+    .video2 {
+        /* width: 140%; */
+        position: absolute;
+        margin-left: -33vw;
+        margin-bottom: -90%;
+    }
+
+    .row-one,.row-four {
+        flex-direction: column-reverse;
+    }
+    .dropdown  {
+        margin-top: -20%;
+    }
+    .feature .row {
+        height: 500px;
+    }
+    .features .h1 {
+       position: absolute;
+       top: -10%;
+    }
+}
+@media only screen and (min-width: 998px) {
+
+}
